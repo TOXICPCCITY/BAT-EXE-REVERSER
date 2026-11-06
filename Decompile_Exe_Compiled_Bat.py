@@ -1,7 +1,7 @@
-#!/usr/bin/env python3
+e#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-rex_extract.py - statically unpack "REX AIM OPTI V2.0.exe"
+rex_extract.py - statically unpack "1.exe"
 
 What it does
 ------------
@@ -15,7 +15,7 @@ NOTHING IS EXECUTED. The .bat is written as .txt on purpose.
 
 Usage
 -----
-    python rex_extract.py "REX AIM OPTI V2.0.com"
+    python rex_extract.py "1.exe"
     python rex_extract.py "EXAMPLE.EXE" -o my_folder
     python rex_extract.py "EXAMPLE.EXE" --key 2ED6C2B522EF7B4390E9F2BF61FD3F1A
 
@@ -29,11 +29,11 @@ import struct
 import sys
 import zlib
 
-DEFAULT_EXE = "REX AIM OPTI V2.0.com"
+DEFAULT_EXE = "1.exe"
 NAME_CANDIDATES = [
-    "REX AIM OPTI V2.0.exe",
-    "REX AIM OPTI V2.0.com",
-    "REX AIM OPTI V2.0",
+    "1.exe",
+    "2.exe",
+    "3",
 ]
 
 # RC4 key recovered from the stub.
